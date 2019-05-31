@@ -1,28 +1,11 @@
 # ViewContainerRefTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+Angular 개발 하면서 컴포넌트를 동적으로 생성하려고 할때가 있다.<br>
+공통 팝업 같은 경우에 그냥 컴포넌트르 만들어서 selector로 잡아서 사용했는데 .. 다른 방법도 있다는것을 알았다. <br>
+처음으로 ComponentFactoryResolver를 이용해봤다.<br>
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<hr>
+ng start 로 시작 <br>
+Hello 버튼을 클릭하면 Hello를 보여주는 컴포넌트를 생성하고
+Bye버튼으 클릭하며 Bye룰 보여주는 컴포넌트를 동적으로 생성한다. 
+재미있다!
