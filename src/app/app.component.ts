@@ -37,6 +37,11 @@ export class AppComponent implements OnDestroy{
     // 4. Pass value for @Input properties using component reference instance method
     this.entryRef.instance.message = title;
 
+    // get output event from subscribing to delete event (output)
+    this.entryRef.instance.deleteEvent.subscribe(() => {
+      this.entryRef.destroy();
+    })
+
   }
 
 }
